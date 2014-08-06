@@ -1,18 +1,36 @@
-abstract: Finds URI from arbitrary text containing UTF8 raw characters in its path
-author: Tatsuhiko Miyagawa <miyagawa@bulknews.net>
-build_requires: 
-  Test::More: 0
-distribution_type: module
-generated_by: Module::Install version 0.64
+---
+abstract: 'Finds URI from arbitrary text containing UTF8 raw characters in its path'
+author:
+  - 'Tatsuhiko Miyagawa <miyagawa@bulknews.net>'
+build_requires:
+  ExtUtils::MakeMaker: '0'
+configure_requires:
+  Module::Build::Tiny: '0.037'
+dynamic_config: 0
+generated_by: 'Dist::Milla version v1.0.5, Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142060'
 license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
 name: URI-Find-UTF8
-no_index: 
-  directory: 
-    - inc
+no_index:
+  directory:
     - t
-requires: 
-  Encode: 0
-  URI::Escape: 0
-  URI::Find: 0
-  perl: 5.8.1
-version: 0.01
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+requires:
+  Encode: '0'
+  Test::More: '0'
+  URI::Escape: '0'
+  URI::Find: '20140709'
+resources:
+  bugtracker: https://github.com/miyagawa/URI-Find-UTF8/issues
+  homepage: https://github.com/miyagawa/URI-Find-UTF8
+  repository: https://github.com/miyagawa/URI-Find-UTF8.git
+version: '0.04'
+x_contributors:
+  - 'otsune <otsune@gmail.com>'
+  - 'skaufman <sam@socialflow.com>'
